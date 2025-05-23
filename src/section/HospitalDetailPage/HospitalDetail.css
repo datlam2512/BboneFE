@@ -1,0 +1,10 @@
+.custom-dropdown .ant-select-item {
+    color: #1079B1; /* Default color */
+}
+
+.ant-select-selection-item{
+    color: #1079B1;
+}
+.custom-select-placeholder .ant-select-selection-placeholder {
+    color: #1079B1 !important; /* Change this to your desired placeholder color */
+}

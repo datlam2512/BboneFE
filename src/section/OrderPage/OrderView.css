@@ -1,0 +1,42 @@
+.order-page {
+    padding: 20px;
+  }
+  
+  .search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .order-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .order-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .item-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

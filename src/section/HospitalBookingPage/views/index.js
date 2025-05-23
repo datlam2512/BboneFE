@@ -1,0 +1,1 @@
+export { default as HospitalBooking } from "../views/HospitalBooking"

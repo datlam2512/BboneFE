@@ -1,0 +1,1 @@
+export { default as CustomerInfoView } from "../views/CustomerInfo"

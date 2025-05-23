@@ -1,0 +1,1 @@
+export { default as ClinicView } from "../views/ClinicPage"

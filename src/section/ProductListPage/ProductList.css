@@ -1,0 +1,6 @@
+:where(.css-dev-only-do-not-override-1r287do).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    background: #59b3e4;
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-card .ant-card-body{
+    background: #59b3e4;
+}

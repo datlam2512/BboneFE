@@ -1,0 +1,33 @@
+.custom-input {
+  border: 2px solid #1079B1; /* Set border color */
+  border-radius: 8px; /* Adjust border radius */
+  width: 400px; /* Set input width */
+}
+
+.custom-input::placeholder {
+  color: #1079B1; /* Set placeholder text color */
+}
+
+.custom-form .ant-input {
+  color: #1079B1; /* Set input text color */
+}
+
+.custom-form .ant-select-selector {
+  border: 2px solid #1079B1; /* Set border color for select */
+  border-radius: 8px; /* Adjust border radius */
+}
+
+.custom-form .ant-select-selector:hover {
+  border-color: #1079B1; /* Hover effect for select border */
+}
+
+.ant-input:hover,
+.ant-select-selector:hover {
+  border-color: #1079B1; /* Hover effect for input and select */
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-modal .ant-modal-content{
+  padding: 0;
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-card .ant-card-body{
+  background: #1176AE;
+}

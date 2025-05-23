@@ -1,0 +1,1 @@
+export { default as BodyPart } from "../views/BodyPart"

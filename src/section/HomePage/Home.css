@@ -1,0 +1,56 @@
+:where(.css-dev-only-do-not-override-1r287do).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    background: #1176AE !important;
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-card .ant-card-body{
+    background: #1176AE !important;
+}
+.ant-btn {
+     margin-right:9px; 
+}
+.custom-modal .ant-modal-content {
+    border-radius: 8px  !important; /* Rounded corners */
+    width: 120%  !important;
+  }
+  
+  .modal-content {
+    text-align: center  !important; /* Center text */
+    padding: 20px  !important; /* Add padding */
+  }
+  
+  .modal-title {
+    font-weight: bold  !important; /* Make title bold */
+    font-size: 24px  !important; /* Adjust font size */
+    color: #1079B1  !important; /* Change color to match design */
+  }
+  
+  .modal-description {
+    margin: 15px 0  !important; /* Add margin */
+    font-size: 16px  !important; /* Adjust font size */
+    color: #1079B1  !important; /* Text color */
+  }
+  
+  .test-button {
+    background-color: #348DBD  !important; /* Button color */
+    color: white  !important; /* Text color */
+    font-weight: bold  !important; /* Make button text bold */
+    border-radius: 4px  !important; /* Rounded corners */
+  /* Padding for button */
+    border: none  !important; /* Remove border */
+    cursor: pointer  !important; /* Pointer cursor */
+    padding-left: 100px  !important;
+    padding-right: 100px  !important;
+  }
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: Intent;
+}
+.font-bold {
+  font-weight: 700;
+  font-family: Intent;
+  margin-right: 10px;
+}
+.text-\[16px\] {
+  font-size: 16px;
+  font-family: Intent;
+}

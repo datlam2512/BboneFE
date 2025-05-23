@@ -1,0 +1,12 @@
+:where(.css-dev-only-do-not-override-1r287do).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    background: #1176AE;
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-card .ant-card-body {
+    background: #1176AE;
+}
+.diagnotictext{
+    font-family: Intent;
+}
+.textcheck{
+    font-family: Intent;
+}

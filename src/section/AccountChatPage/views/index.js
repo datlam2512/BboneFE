@@ -1,0 +1,1 @@
+export { default as AccountChat } from "../views/AccountChat"

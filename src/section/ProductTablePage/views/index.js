@@ -1,0 +1,1 @@
+export { default as ProductTableVieư } from "../views/ProductTable"

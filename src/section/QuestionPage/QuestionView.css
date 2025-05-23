@@ -1,0 +1,19 @@
+:where(.css-dev-only-do-not-override-1r287do).ant-progress .ant-progress-inner {
+background-color: #D2E6F0;
+    
+}
+
+.font-semibold {
+    font-weight: 600;
+    font-family: Intent;
+}
+
+.font-medium {
+    font-weight: 500;
+    font-family: Intent;
+}
+.text-\[\#1079B1\] {
+    --tw-text-opacity: 1;
+    color: rgb(16 121 177 / var(--tw-text-opacity));
+    font-family: Intent;
+}

@@ -1,0 +1,14 @@
+:where(.css-dev-only-do-not-override-1r287do).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    border: none;
+    background: none;
+}:where(.css-dev-only-do-not-override-1r287do).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary){
+    margin: 0;
+    border-left: none;  
+    background-color: #D2E6F0;
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-input-group >.ant-input:first-child, :where(.css-dev-only-do-not-override-1r287do).ant-input-group .ant-input-group-addon:first-child {
+    background-color: #D2E6F0;
+}
+:where(.css-dev-only-do-not-override-1r287do).ant-col-6 {
+    max-width: 20%;
+}
