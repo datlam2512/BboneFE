@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const axiosClient = axios.create({
-  baseURL: "https://bbone-cqa7fseyejf8a5dh.canadacentral-01.azurewebsites.net/api",
+  baseURL: "https://localhost:7187/api",
   headers: {
     'Accept': '*/*',
   }

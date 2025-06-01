@@ -34,6 +34,7 @@ export const ChatRoomPage = lazy(() => import("../page/ChatRoomPage"));
 export const CustomerInfo = lazy(() => import("../page/CustomerInfoPage"));
 export const PaymentPage = lazy(() => import("../page/PaymentPage"));
 export const DashboardViewPage = lazy(() => import("../page/DashboardViewPage"));
+export const ConfirmLoginPage= lazy(() => import("../page/ConfirmPage"));
 const checkAccess = (isAdmin) => {
   return isAdmin === "Admin";
 };
@@ -128,6 +129,10 @@ export const Router = () => {
         {
           path: "/thongtin",
           element: <CustomerInfo />,
+        },
+        {
+          path: "/confirm/:Token",
+          element: <ConfirmLoginPage />,
         },
         {
           path: "*",

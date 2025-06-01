@@ -1,9 +1,7 @@
 import create from "zustand";
-
-// Tạo store Zustand cho thông tin xác thực và người dùng
 const useAuth = create((set) => ({
-  isAuthenticated: !!localStorage.getItem("token"), // Restore from localStorage
-  infoUser: JSON.parse(localStorage.getItem("userInfo")), // Restore user info from localStorage
+  isAuthenticated: !!localStorage.getItem("token"),
+  infoUser: JSON.parse(localStorage.getItem("userInfo")), 
 
   // Hàm để xác nhận đăng nhập
   login: (token, userInfo) => {
@@ -14,25 +12,27 @@ const useAuth = create((set) => ({
     // Set the state to authenticated
     set({ isAuthenticated: true, infoUser: userInfo });
   },
-
-  // Hàm để lưu thông tin người dùng
   setInfoUser: (userInfo) => {
-    console.log("User Info:", userInfo); // Log the userInfo to console
-    localStorage.setItem("userInfo", JSON.stringify(userInfo)); // Persist user info
+    console.log("User Info:", userInfo); 
+    localStorage.setItem("userInfo", JSON.stringify(userInfo)); 
     set({ infoUser: userInfo });
   },
-
-  // Hàm đăng xuất
   logout: () => {
-    // Remove token and user info from localStorage
     localStorage.removeItem("token");
     localStorage.removeItem("userInfo");
-
-    // Reset the authentication state
     set({ isAuthenticated: false, infoUser: null });
   },
   isLoggedIn: () => {
-    return !!localStorage.getItem("token"); // Checks if token exists in localStorage
+    return !!localStorage.getItem("token"); 
+  },
+  confirmAccount: async (token) => {
+    try {
+      const response = await confirm(token);
+      return { success: true, data: response.data };
+    } catch (error) {
+      console.error("Lỗi xác nhận tài khoản:", error);
+      return { success: false, error: error?.response?.data?.message || "Lỗi xác nhận" };
+    }
   }
 }));
 

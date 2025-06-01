@@ -28,10 +28,9 @@ function LoginView() {
         Cookies.set("token", token, { expires: 1 });
 
         // Đặt trạng thái xác thực và lưu thông tin người dùng (bao gồm role) vào Zustand
-        useAuth.getState().login();  // Đặt người dùng đã xác thực
-        useAuth.getState().setInfoUser({ ...userInfo, role });  // Lưu thông tin người dùng bao gồm vai trò (role) vào Zustand
+        useAuth.getState().login();  
+        useAuth.getState().setInfoUser({ ...userInfo, role }); 
 
-        // Wrap navigation and state updates in startTransition for smooth transitions
         startTransition(() => {
           // Điều hướng dựa trên vai trò (role) của người dùng
           if (role === 'Admin') {
@@ -57,7 +56,7 @@ function LoginView() {
       setIsLoggingIn(false);
       notification.error({
         message: "Login Failed",
-        description: error.response?.data?.message || "Something went wrong!",
+        description: error.response?.data?.ErrorMessages || "Something went wrong!",
         duration: 2,
       });
     }

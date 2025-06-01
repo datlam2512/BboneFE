@@ -14,4 +14,11 @@ const register = (Email, Password,FullName,GenderId,TelephoneNumber) => {
     }
   });
 };
-export { login,register};
+const confirm = (Token) => {
+  return axiosClient.get(`/authentication/confirm?token=${Token}`, {
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+};
+export { login,register, confirm};
