@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { getDetailProduct } from "../api/product";
 import { getAllProduct } from "../api/product";
+import { uploadProductImages } from "../api/product";
 const useProduct = create((set) => ({
   productData: [],
   productDataDetail:[],
@@ -30,5 +31,15 @@ const useProduct = create((set) => ({
       console.error("Error fetching data:", error);
     }
   },
+  
+  uploadImages: async (productId, files) => {
+    try {
+      const response = await uploadProductImages(productId, files);
+      return response.data;
+    } catch (error) {
+      console.error("Error uploading images:", error);
+      throw error;
+    }
+  }
 }));
 export default useProduct;

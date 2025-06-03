@@ -46,8 +46,6 @@ import "./indexheader.css";
 
 import useAuth from "../hooks/useAuth";
 const { Header, Content, Footer } = Layout;
-const facebookLink = "https://www.facebook.com/tanthanh.bui.94617/";
-const youtubeLink = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
 const App = ({ children }) => {
   // const {
   //   token: {borderRadiusLG : 1, },

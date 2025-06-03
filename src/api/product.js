@@ -25,5 +25,13 @@ const updateProduct = (Id, productData) => {
 const deleteProduct = (Id) => {
   return axiosClient.delete(`/products/${Id}`);
 };
+//add image for product
+const uploadProductImages = (productId, formData) => {
 
-  export{getAllProduct,getDetailProduct,addProduct,updateProduct,deleteProduct}
+  return axiosClient.post(`/products/${productId}/images`, formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+};
+  export{getAllProduct,getDetailProduct,addProduct,updateProduct,deleteProduct,uploadProductImages}
