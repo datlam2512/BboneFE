@@ -30,5 +30,21 @@ const getAllHospital = () => {
     }
     );
   };
+const addHospital = (hospitalData) => {
+  return axiosClient.post(`/hospitals`, hospitalData);
+};
+const updateHospital = (Id, hospitalData) => {
+  return axiosClient.put(`/hospitals/${Id}`, hospitalData);
+};
+const deleteHospital = (Id) => {
+  return axiosClient.delete(`/hospitals/${Id}`);
+};
+const uploadHospitalImages = (hospitalId, formData) => {
 
-  export{getAllHospital,getHospitalDetail,createBooking,getAllBooking,confirmbooking,Canclebooking}
+  return axiosClient.post(`/imagehospital/${hospitalId}/images`, formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+};
+  export{getAllHospital,getHospitalDetail,createBooking,getAllBooking,confirmbooking,Canclebooking,addHospital,updateHospital,deleteHospital,uploadHospitalImages}

@@ -35,9 +35,6 @@ function Homeview() {
     carouselRef.current.next(); // Move to the next slide
   };
   // Function to show the previous article
-  // Function to show the previous article
-  // Function to show the previous article
-  // Function to show the previous article
   const handlePrevArticle = () => {
     setCurrentArticleIndex(
       (prevIndex) =>
@@ -145,7 +142,7 @@ function Homeview() {
     <div className="bg-white font-sans w-full homeviewlayout">
       <header className="w-screen relative overflow-hidden">
         <div className="w-full">
-          <img src={bannerbbone} alt="Doctor" className="w-screen h-[490px]" />
+          <img src={bannerbbone} alt="Doctor" className="w-screen h-[500px]" />
         </div>
       </header>
       <div className="w-full flex-row align-middle justify-center ml-3">

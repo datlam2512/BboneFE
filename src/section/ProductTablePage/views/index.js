@@ -1,1 +1,1 @@
-export { default as ProductTableVieư } from "../views/ProductTable"
+export { default as ProductTableView } from "../views/ProductTable"

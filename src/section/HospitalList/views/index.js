@@ -1,0 +1,1 @@
+export { default as HospitalListView } from "../HospitalListTable"

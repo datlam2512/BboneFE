@@ -35,6 +35,7 @@ export const CustomerInfo = lazy(() => import("../page/CustomerInfoPage"));
 export const PaymentPage = lazy(() => import("../page/PaymentPage"));
 export const DashboardViewPage = lazy(() => import("../page/DashboardViewPage"));
 export const ConfirmLoginPage= lazy(() => import("../page/ConfirmPage"));
+export const HospitalListTable= lazy(() => import("../page/HospitalTableList"));
 const checkAccess = (isAdmin) => {
   return isAdmin === "Admin";
 };
@@ -205,6 +206,10 @@ export const Router = () => {
           {
             path: "/staff/datlich",
             element: <ClinicPage />,
+          },
+           {
+            path: "/staff/benhvien",
+            element: <HospitalListTable />,
           },
         ],
     },

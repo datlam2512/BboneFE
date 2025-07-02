@@ -36,6 +36,7 @@ const items = [
   getItem("Đơn hàng", "3", <HomeOutlined />, null, "/staff/donhang"),
   getItem("Lịch khám", "4", <HomeOutlined />, null, "/staff/datlich"),
   getItem("Chat", "5", <HomeOutlined />, null, "/staff/chat"),
+   getItem("Bệnh Viện", "6", <HomeOutlined />, null, "/staff/benhvien"),
 ];
 
 const DashboardLayout = ({ children }) => {
